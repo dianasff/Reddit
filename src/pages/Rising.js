@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 
-export default function Hot(){
+export default function Rising(){
     const [res, setRes] = useState([])
     const [after, setAfter] = useState('')
     
@@ -14,18 +14,18 @@ export default function Hot(){
     
         //makes a call to Reddit api
         useEffect(()=>{
-            axios.get('https://www.reddit.com/r/reactjs/hot.json').then(res =>{
+            axios.get('https://www.reddit.com/r/reactjs/rising.json').then(res =>{
                 setRes(res.data.data.children)
                 setAfter(res.data.data.after)
                 
 
             })
-        }, [])   
+        },[])   
         // takes the results from the next page to add to the page  */}
         const onNextPage = async(after)=>{
             const resposta= await axios({
                 method: 'GET',
-                url:'https://www.reddit.com/r/reactjs/hot.json',
+                url:'https://www.reddit.com/r/reactjs/rising.json',
                 params:{after:after}
             });
             // update the states */}
@@ -37,7 +37,7 @@ export default function Hot(){
        <div >
            <Principal/>
            <div className='dados'>
-               <List data={res} after={after} onNextPage={onNextPage} />
+            <List data={res} after={after} onNextPage={onNextPage} />
            </div>
            
        </div>

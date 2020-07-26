@@ -1,0 +1,54 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+}
+
+body{
+    font:400 14px Roboto, sans-serif;
+    background:#f0f0f5;
+    -webkit-font-smothing: antialiased;
+}
+.titlepage{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding:20px;
+    margin-bottom: 40px;
+
+}
+.titlepage span{
+    color:orangered;
+}
+.sub{
+    text-align:center;
+    margin-top: 20px;
+
+}
+.subpage{
+    background-color: gray;
+    color:white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding:20px 50px 20px 50px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:40px;
+    
+}
+.subpage:hover{
+    background-color: orangered;
+}
+.active-link{
+    background-color: orangered;
+}
+
+@media  screen and (max-width: 480px) {
+    .subpage{
+        padding:20px 10px 20px 10px;
+    }
+}
