@@ -1,0 +1,16 @@
+.paginacao{
+    height: 50px;
+    width: 50%;
+    color:white;
+    background-color: gray;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.paginacao:hover{
+    background-color: orangered;
+}
+.pag{
+    align-items: center;
+    text-align: center;
+}

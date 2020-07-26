@@ -1,0 +1,49 @@
+.article{
+    border-top: 3px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.article:hover{
+    background-color: grey;
+}
+.innerarticle{
+    text-decoration:none;
+    cursor:pointer;
+    display:flex;
+    flex-direction: row;
+    
+}
+img{
+    height: 155px;
+    width: 155px;
+    margin-right: 25px;
+}
+.artinfo{
+    line-height: 2.8em;
+}
+.titulo{
+    color:black;
+
+}
+.info{
+    color:black;
+}
+h3 span{
+    color:orangered
+}
+
+.domain{
+    text-decoration: underline;
+    color:black;
+}
+@media  screen and (max-width: 480px) {
+    .innerarticle{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        max-width: 100%;
+    }
+}
