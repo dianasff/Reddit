@@ -6,6 +6,7 @@ This app displays information about REACTJS comming from the Reddit API.
 * The app will first displays the hot information.    
 * To see the new or rising information you should just click on the equivalent button;
 * To see more results you should click on the button "+ Ver mais", that should displays more information, if there is no more information to be displayed, there will be no buttom ;
+* Click on the domain link to read the post.  
 * To use the App in your local machine see the topic 'How to run the App locale '
  
 ## How to run the App locale
