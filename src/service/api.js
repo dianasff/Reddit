@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create ({
-    baseURL: 'http://www.reddit.com/r/reactjs/'
+    baseURL: 'https://www.reddit.com/r/reactjs.json'
 })
 
 export default api;
